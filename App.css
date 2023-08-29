@@ -1,0 +1,33 @@
+.button_msg {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.button_msg:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+.button_msg {
+  background-color: #f1f1f1;
+  color: black;
+}
+.bigbox {
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #cef0ff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.button_msg {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
