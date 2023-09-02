@@ -1,0 +1,21 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Dark Mode Styles */
+  .navbar.dark {
+    background-color: #222;
+  }
+  

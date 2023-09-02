@@ -1,0 +1,88 @@
+/* ExcelImporter.css */
+
+:root {
+    --bg-color: #ef1313;
+    --text-color: #333;
+    --header-bg-color: #3498db;
+    --header-text-color: #fff;
+    --header-border-color: #2980b9;
+    --hover-bg-color: #f5f5f5;
+    
+    /* Dark Mode Variables */
+    --bg-color-dark: #4a4949;
+    --text-color-dark: #fff;
+    --header-bg-color-dark: #333;
+    --header-text-color-dark: #fff;
+    --header-border-color-dark: #444;
+    --hover-bg-color-dark: #444;
+  }
+
+/* Style for the outer container */
+.ExcelImporter {
+    margin: 20px;
+    background-color: var(--bg-color);
+  }
+  
+
+.ExcelImporter.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  
+
+  /* Style for the table container */
+  .ExcelTableContainer {
+    overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+  }
+  
+  /* Style for the table */
+  .ExcelTable {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Style for table headers */
+  .ExcelTable th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Style for table cells */
+  .ExcelTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Hover effect for table rows */
+  .ExcelTable tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  /* Dark Mode Styles */
+
+ 
+  
+  .ExcelTable.dark {
+    background-color: var(--bg-color-dark);
+  }
+  
+  .ExcelTable.dark th {
+    background-color: var(--header-bg-color-dark);
+    color: var(--header-text-color-dark);
+    border-bottom: 2px solid var(--header-border-color-dark);
+  }
+  
+  .ExcelTable.dark tbody tr:hover {
+    background-color: var(--hover-bg-color-dark);
+  }
