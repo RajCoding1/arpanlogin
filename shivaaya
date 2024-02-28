@@ -1,0 +1,40 @@
+const { createStore } = require('redux');
+
+// Action types
+const BUY_CAKE = 'BUY_CAKE';
+const BUY_ICECREAM = 'BUY_ICECREAM';
+
+// Action creators
+const buyCake = () => ({ type: BUY_CAKE });
+const buyIceCream = () => ({ type: BUY_ICECREAM });
+
+// Reducer
+const initialState = {
+  cakes: 10,
+  iceCreams: 20,
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case BUY_CAKE:
+      return { ...state, cakes: state.cakes - 1 };
+    case BUY_ICECREAM:
+      return { ...state, iceCreams: state.iceCreams - 1 };
+    default:
+      return state;
+  }
+};
+
+// Initialize Redux store
+const store = createStore(reducer);
+
+// Dispatch actions to buy a cake and an ice cream
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+
+store.dispatch(buyIceCream());
+store.dispatch(buyIceCream());
+
+// Log the final state
+console.log('Final State:', store.getState());
